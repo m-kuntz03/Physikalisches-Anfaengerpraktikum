@@ -1,0 +1,64 @@
+\documentclass{article}
+
+\usepackage[T1]{fontenc}    %Schriftart des Dokumentes
+\usepackage[ngerman]{babel} %Dokumentensprache, hier Deutsch
+\usepackage{amsmath, amssymb, stmaryrd} %mathematische Schriftzeichen
+\usepackage{graphicx} %Einfügen von Grafiken
+\usepackage{wrapfig}
+\usepackage{bm}
+
+\setlength{\parindent}{0pt} %Einrückung von Absätzen auf null gesetzt
+\setlength{\parskip}{10pt} %Abstand zischen Absätzen auf 10pt gesetzt
+
+\title{Versuch X:}
+\author{Matthias Kuntz}
+\date{Das Datum}
+
+\begin{document}
+
+\maketitle
+
+%-------------------------EINLEITUNG-------------------------
+\section{Einleitung}
+
+\subsection{Physikalische Grundlagen}
+
+\subsection{Versuchsaufbau}
+
+%---------------VERSUCHSPROTOKOLL MIT MESSDATEN---------------
+\newpage
+
+\section{Versuchsprotokoll mit Messdaten}
+
+\includegraphics[width=\textwidth]{graphics/mess1.jpg}
+\newpage
+\includegraphics[width=\textwidth]{graphics/mess2.jpg}
+\newpage
+\includegraphics[width=\textwidth]{graphics/mess3.jpg}
+\newpage
+
+\addtocounter{table}{3}
+
+%-------------------------AUSWERTUNG-------------------------
+\section{Auswertung}
+
+In dieser Evaluation werden alle Fehler, sofern keine spezifische Angabe gemacht wird, mithilfe der Gauss'schen Fehlerfortpflanzung berechnet. Dies bedeutet, dass ein Wert $F$, der mit der Formel $f(a_1, ..., a_n)$ berechnet wird, den Fehler $\Delta F$ gegeben über folgende Formel hat:
+
+\begin{equation}
+    \Delta F = \sqrt{\sum_n \left( \frac{\partial f}{\partial a_n} \cdot \Delta a_n \right)^2}.
+\end{equation}
+
+\subsection{X}
+
+%---------------PRÄSENTATION DER ENDERGEBNISSE---------------
+\section{Präsentation der Endergebnisse}
+
+blabla.
+
+%---------------ZUSAMMENFASSUNG UND DISKUSSION---------------
+\section{Zusammenfassung und Diskussion}
+
+blabla.
+
+\end{document}
+
